@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    border: 2px solid red;
+    display: flex;
+    background-color: rgb(170, 198, 202);
+    padding: 12px 100px;
+}
+
+.homepage-link {
+    border: 2px solid red;
+    text-decoration: none;
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    width: 50px;
+}
+
+.header ul {
+    border: 2px solid red;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex: auto;
+    padding: 0;
+    flex-grow: 2;
+    margin: 12px 36px;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
+.header-links {
+    border: 2px solid red;
+    margin: 0px 24px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-info {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 0;
+    margin-left: 12px;
+}
+
+.contact-info h1,
+.contact-info h2 {
+    
+    align-self: flex-end;
+    margin: 12px 0px;
+}
+
+.main-background-image {
+    display: flex;
+}
+
+.main-background-image img {
+    flex: auto;
+    height: 600px;
+}
+
+.mainbody-text {
+    border: 2px solid red;
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+.mainbody-text p {
+    background-color: rgb(124, 253, 210, 0.4);
+    margin: -500px 0px 600px 50px;
+}
