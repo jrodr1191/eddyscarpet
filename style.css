@@ -3,80 +3,207 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    font-family: 'Rethink Sans', sans-serif;
 }
 
 .header {
-    border: 2px solid red;
     display: flex;
-    background-color: rgb(170, 198, 202);
-    padding: 12px 100px;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 12px 10px;
 }
 
 .homepage-link {
-    border: 2px solid red;
+    font-family: 'Zen Tokyo Zoo', system-ui;
+    align-self: center;
     text-decoration: none;
     color: black;
     font-size: 48px;
     text-align: center;
-    width: 50px;
+    width: auto;
+    flex-shrink: 0;
+    position: relative;
 }
 
-.header ul {
-    border: 2px solid red;
+.links {
     display: flex;
+    align-self: flex-end;
     align-items: flex-end;
     justify-content: center;
     flex: auto;
-    padding: 0;
+    height: auto;
+    padding: 6px 0px;
     flex-grow: 2;
     margin: 12px 36px;
     flex-wrap: wrap;
-    align-self: flex-end;
+    border-bottom: 2px solid orangered;
+    border-top: 2px solid orangered;
+    min-width: 380px;
+    max-width: 630px;
 }
 
 .header-links {
-    border: 2px solid red;
-    margin: 0px 24px;
+    margin-left: 24px;
     text-decoration: none;
     color: black;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-links.first {
+    margin-left: 0;
+}
+
+.header-links:hover {
+    color: orangered;
 }
 
 .contact-info {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     flex-shrink: 0;
     min-width: 0;
     margin-left: 12px;
+    padding: 0;
 }
 
 .contact-info h1,
 .contact-info h2 {
-    
     align-self: flex-end;
     margin: 12px 0px;
 }
 
-.main-background-image {
+.main-learnmore {
     display: flex;
+    background-image: url(./images/image2.jpg);
+    height: auto;
+    width: auto;
+    background-size: 100% auto;
+    background-position: center;
+    border-left: 2px solid aquamarine;
+    border: 2px solid aquamarine;
 }
 
-.main-background-image img {
-    flex: auto;
+.gradientbox {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to bottom, aquamarine, transparent);
+    margin-bottom: -50px;
+    z-index: 1;
+    position: absolute;
+}
+
+.mainbox1 {
     height: 600px;
+    flex: 1 1 0;
+    margin-left: 12px;
+}
+
+.mainbox3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3 1 auto;
+    align-self: center;
+    text-align: center;
+    padding: 0;
+}
+
+.learn-more-bckgrnd {
+    background-color: aquamarine;
+    margin: 24px;
+    border-radius: 8px;
+    border: 2px solid orangered;
+}
+
+.mainbox3 h1 {
+    margin: 36px;
+    margin-bottom: 12px;
+}
+
+.mainbox3 button {
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    margin: 36px;
+    margin-top: 12px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: bold;
+    background: rgb(169, 255, 226);
+    border-color: white;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+.mainbox3 button:hover {
+    color: orangered;
+    background-color: aliceblue;
+    transition: 0.25s;
 }
 
 .mainbody-text {
-    border: 2px solid red;
     display: flex;
-    width: 500px;
-    height: 500px;
+    align-self: center;
+    flex: auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(124, 253, 210, 0.6);
+    position: relative;
+    text-align: justify;
+    padding: 12px;
 }
 
-.mainbody-text p {
-    background-color: rgb(124, 253, 210, 0.4);
-    margin: -500px 0px 600px 50px;
+.main-shop-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 12px;
+}
+
+.inhome-shop-text {
+    width: 400px;
+}
+
+.inhome-shop-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 24px 0px;
+    background-image: url(./images/shopathome.jpg);
+    border: 2px solid orangered;
+    height: 350px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.inhome-shop-image button {
+    border-radius: 8px;
+    background: rgb(169, 255, 226);
+    border-color: white;
+    margin: 12px 24px;
+    font-size: 36px;
+    font-family: 'Rethink Sans', sans-serif;
+    border-style: solid;
+    font-weight: 700;
+}
+
+.inhome-shop-image button:hover {
+    color: orangered;
+    background-color: aliceblue;
+    transition: 0.25s;
+}
+
+.shopbox1 {
+    width: 48px;
+    flex-shrink: 4;
+}
+
+.footer {
+    background-color: aquamarine;
 }
