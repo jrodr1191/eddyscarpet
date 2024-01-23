@@ -13,6 +13,21 @@ body {
     padding: 12px 10px;
 }
 
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#search {
+    background: rgb(169, 255, 226);
+    height: 30px;
+    width: 250px;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
 .homepage-link {
     font-family: 'Zen Tokyo Zoo', system-ui;
     align-self: center;
@@ -21,6 +36,7 @@ body {
     font-size: 48px;
     text-align: center;
     width: auto;
+    min-width: 265px;
     flex-shrink: 0;
     position: relative;
 }
@@ -126,6 +142,9 @@ body {
 }
 
 .mainbox3 button {
+    color: black;
+    text-decoration: none;
+    text-align: center;
     width: 200px;
     height: 80px;
     font-size: 30px;
@@ -161,7 +180,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 12px;
+    margin: 24px 12px;
 }
 
 .inhome-shop-text {
@@ -172,6 +191,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     margin: 24px 0px;
     background-image: url(./images/shopathome.jpg);
     border: 2px solid orangered;
@@ -182,7 +202,7 @@ body {
     border-radius: 8px;
 }
 
-.inhome-shop-image button {
+.inhome-shop-text button {
     border-radius: 8px;
     background: rgb(169, 255, 226);
     border-color: white;
@@ -191,9 +211,10 @@ body {
     font-family: 'Rethink Sans', sans-serif;
     border-style: solid;
     font-weight: 700;
+    padding: 6px 24px;
 }
 
-.inhome-shop-image button:hover {
+.inhome-shop-text button:hover {
     color: orangered;
     background-color: aliceblue;
     transition: 0.25s;
@@ -204,6 +225,211 @@ body {
     flex-shrink: 4;
 }
 
+.brief-about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px;
+    margin: 48px 0px;
+}
+
+.brief-about-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    flex: 1 4 0;
+    justify-content: center;
+    align-items: center;
+    padding-right: 12px;
+    height: 400px;
+}
+
+.brief-about-text h1 {
+    text-align: center;
+}
+
+.brief-about button {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    margin: 36px;
+    margin-top: 12px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: bold;
+    background: rgb(169, 255, 226);
+    border-color: white;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+.brief-about button:hover {
+    color: orangered;
+    background-color: aliceblue;
+    transition: 0.25s;
+}
+
+.brief-about-divider1,
+.brief-about-divider3 {
+    flex: 0.1 4 auto;
+}
+
+.brief-about-image {
+    margin: 0;
+    margin-left: 12px;
+    flex: 1;
+    background-image: url(./images/briefabout.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    min-width: 300px;
+    border-radius: 8px;
+    border: 2px solid orangered;
+}
+
+.select-floor-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.select-floor-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.select-floor-header h1,
+.select-floor-header h2 {
+    padding: 0;
+    margin: 12px;
+}
+
+.select-floor-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 870px;
+}
+
+.select-floor-box {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin: 12px 36px;
+    align-items: flex-end;
+    justify-content: center;
+    border: 2px solid orangered;
+    border-radius: 8px;
+}
+
+.select-floor-box.box1 {
+    background-image: url(./images/carpet.jpg);
+    background-size: cover;
+}
+
+.select-floor-box.box2 {
+    background-image: url(./images/tile.jpg);
+    background-size: cover;
+}
+
+.select-floor-box.box3 {
+    background-image: url(./images/vinyl.jpg);
+    background-size: cover;
+}
+
+.select-floor-box.box4 {
+    background-image: url(./images/carpet-tile.jpg);
+    background-size: cover;
+}
+
+.select-floor-box button {
+    width: 150px;
+    height: 35px;
+    margin: 18px;
+    border: 2px solid white;
+    background: rgb(169, 255, 226);
+    font-weight: 700;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 20px
+}
+
+.select-floor-box button:hover {
+    color: orangered;
+    background-color: aliceblue;
+    transition: 0.25s;
+}
+
+.request-estimate {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.request-estimate-header {
+    border-top: 2px solid orangered;
+    text-align: center;
+    padding: 0;
+    margin: 36px;
+}
+
+.request-estimate-header h1 {
+    width: auto;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    padding-top: 12px;
+}
+
+.request-estimate-block {
+    display: flex;
+    justify-content: center;
+}
+
+.request-estimate-image {
+    align-self: center;
+    height: auto;
+}
+
+.request-estimate-image img{
+    align-self: center;
+    width: 400px;
+    height: 370px;
+    margin-left: 12px;
+    border: 2px solid orangered;
+    border-radius: 8px;
+}
+
+.request-estimate-block-spacer {
+    width: 100px;
+    flex-shrink: 3;
+    margin: 12px;
+}
+
+.request-estimate-contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    justify-content: center;
+}
+
+.request-estimate-email p,
+.request-estimate-email h2,
+.request-estimate-phone p,
+.request-estimate-phone h2,
+.request-estimate-availability p,
+.request-estimate-availability h2 {
+    margin: 10px 0px;
+}
+
+.request-estimate-email,
+.request-estimate-phone {
+    margin-bottom: 28px;
+}
+
 .footer {
     background-color: aquamarine;
+    padding: 12px 48px;
 }
