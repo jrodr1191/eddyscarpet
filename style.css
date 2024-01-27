@@ -190,14 +190,26 @@ body {
 
 .mainbody-text {
     display: flex;
+    flex-direction: column;
     align-self: center;
     flex: auto;
     width: 400px;
-    height: 300px;
-    background-color: rgb(124, 253, 210, 0.8);
+    height: auto;
+    background-color: rgb(124, 253, 210, 0.9);
     position: relative;
-    text-align: justify;
-    padding: 12px;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.mainbody-text h1 {
+    margin: 24px;
+}
+
+.mainbody-text p {
+    margin: 36px 24px;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .orange-bckgrnd {
@@ -310,7 +322,7 @@ body {
 
 .inhome-shop-image{
     margin: 24px 0px;
-    background-image: url(./images/shopathome.jpg);
+    background-image: url(./images/shopathome2.jpg);
     border: 2px solid orangered;
     height: 500px;
     width: auto;
@@ -321,7 +333,7 @@ body {
 }
 
 .inhome-shop-image.tileimg {
-    background-image: url(./images/shopathome1.jpg);
+    background-image: url(./images/shopathome4.jpg);
     background-size: cover;
 }
 
@@ -644,7 +656,7 @@ body {
 }
 
 .flooring-main-header-text.longer {
-    width: 400px;
+    width: 420px;
 }
 
 .flooring-main-header-text h1 {
@@ -698,7 +710,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 36px 24px;
+    margin: 48px 24px;
     min-width: 230px;
     flex: 1 1 230px;
 }
@@ -710,6 +722,7 @@ body {
 .vinyl-options img {
     width: 100%;
     height: 250px;
+    min-height: 250px;
     border: 2px solid orangered;
     border-radius: 8px;
     min-width: 270px;
@@ -722,8 +735,13 @@ body {
     padding-bottom: 4px;
     text-align: center;
     margin: 0;
+    margin-top: 8px;
     font-size: 24px;
     font-weight: 700;
+}
+
+.vinyl-options p {
+    text-align: center;
 }
 
 .vinyl-options p {
@@ -814,12 +832,15 @@ body {
 .about-why-us {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .about-why-us img {
     width: 700px;
     height: 400px;
     margin: 36px 12px;
+    border: 2px solid orangered;
+    border-radius: 8px;
 }
 
 .about-why-us .shopbox1 {
@@ -832,6 +853,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 600px;
+    font-size: 18px;
+    line-height: 1.8;
+    min-width: 350px;
 }
 
 .about-why-us-text p{
