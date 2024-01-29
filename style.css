@@ -832,6 +832,7 @@ body {
     padding: 24px;
     margin-right: auto;
     min-width: 400px;
+    max-width: 650px;
 }
 
 .flooring-contact-box-text h1,
