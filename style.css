@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -97,11 +98,11 @@ body {
 
 .main-learnmore {
     display: flex;
-    background-image: url(./images/image2.jpg);
+    background-image: url(./images/gallery/gallery31.jpg);
     height: auto;
     width: auto;
     background-size: 100% auto;
-    background-position: center;
+    background-position: top;
     border-top: 2px solid orangered;
     border-bottom: 2px solid orangered;
 }
@@ -225,6 +226,7 @@ body {
     align-items: center;
     padding: 12px;
     margin: 48px 0px;
+    flex-wrap: wrap;
 }
 
 .brief-about-text {
@@ -286,6 +288,7 @@ body {
 
 .brief-about-image {
     margin: 0;
+    margin-top: 24px;
     margin-left: 12px;
     flex: 1;
     background-image: url(./images/briefabout.jpg);
@@ -303,6 +306,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 24px 12px;
+    flex-wrap: wrap;
 }
 
 .inhome-shop-text {
@@ -310,6 +314,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 400px;
     max-width: 600px;
     align-self: center;
     flex: 1;
@@ -326,6 +331,8 @@ body {
     border: 2px solid orangered;
     height: 500px;
     width: auto;
+    min-width: 400px;
+    max-width: 600px;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -546,6 +553,12 @@ body {
     transition: 0.25s;
 }
 
+#request-estimate-shopathome {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
 .request-estimate {
     display: flex;
     flex-direction: column;
@@ -618,6 +631,36 @@ body {
     margin-bottom: 28px;
 }
 
+.contact-container {
+    display: flex;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: orangered;
+    font-size: 20px;
+    font-weight: 700;
+    width: auto;
+}
+
+.contact-link::after {
+    display: flex;
+    content: '';
+    border-bottom: 2px solid orangered;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 25%;
+    width: auto;
+}
+
+.contact-link:hover {
+    color: rgb(255, 98, 41);
+}
+
+.contact-link:hover::after {
+    transform: scaleX(1);
+}
+
 .contacthtml {
     border: none;
 }
@@ -657,6 +700,10 @@ body {
 
 .flooring-main-header-text.longer {
     width: 420px;
+}
+
+.flooring-main-header-text.longest {
+    width: 500px;
 }
 
 .flooring-main-header-text h1 {
@@ -775,13 +822,16 @@ body {
     border-radius: 8px;
     margin: 36px;
     width: 1050px;
+    flex-wrap: wrap;
 }
 
 .flooring-contact-box-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 24px;
     margin-right: auto;
+    min-width: 400px;
 }
 
 .flooring-contact-box-text h1,
@@ -794,7 +844,10 @@ body {
 }
 
 .flooring-contact-box-button {
+    display: flex;
+    justify-content: center;
     align-self: center;
+    flex: auto;
     padding: 24px;
 }
 
@@ -864,6 +917,94 @@ body {
 
 .about-spacer {
     height: 40px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1380px;
+    min-width: 450px;
+}
+
+.vinyl-options.gallery {
+    height: 175px;
+    min-height: 175px;
+    min-width: 200px;
+    flex: 1 1 200px;
+    margin: 12px;
+}
+
+.vinyl-options.neg-margin-bot,
+.vinyl-options.gallery.neg-margin-bot {
+    margin-bottom: -1000px;
+    height: 0px;
+    min-height: 0px;
+    width: 50px;
+    padding: 0;
+}
+
+.vinyl-options.gallery img {
+    height: 175px;
+    min-height: 175px;
+    min-width: 200px;
+    flex: 1 1 200px;
+}
+
+.shopathome-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.why-shopathome {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    justify-content: center;
+    margin-right: 36px;
+    margin-left: 18px;
+}
+
+.why-shopathome p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.request-estimate-block-spacer.spacer1 {
+    width: 50px;
+}
+
+.request-estimate-header.sah {
+    border-top: 0px transparent;
+}
+
+.self-level-body {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.self-level-text {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0px 12px;
+}
+
+.self-level-img img{
+    width: 600px;
+    height: 600px;
+    margin: 12px;
+    border: 2px solid orangered;
+    border-radius: 8px;
 }
 
 .footer {
