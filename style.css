@@ -1008,6 +1008,25 @@ body {
     border-radius: 8px;
 }
 
+.about-why-us.floor-base {
+    margin-top: 50px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flooring-base-images {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.flooring-base-images img {
+    width: 200px;
+    height: 200px;
+}
+
 .footer {
     background-color: aquamarine;
     padding: 12px 48px;
