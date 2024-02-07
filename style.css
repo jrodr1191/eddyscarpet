@@ -1027,6 +1027,25 @@ body {
     height: 200px;
 }
 
+.flooring-main-body.vct-tile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flooring-main-body.vct-tile-section h1 {
+    text-align: center;
+    font-size: 36px;
+    
+}
+
+.flooring-main-body.vct-tile-section p {
+    text-align: center;
+    font-size: 28px;
+    max-width: 1300px;
+}
+
 .footer {
     background-color: aquamarine;
     padding: 12px 48px;
